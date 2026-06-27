@@ -276,7 +276,7 @@ scale_color_viridis_c(option = "plasma",
                       direction = -1,
                       name = "Poverty (%)")
 
-
+#408 dallas city tracts
 
 
 library(ggrepel)
