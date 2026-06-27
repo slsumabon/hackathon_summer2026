@@ -11,4 +11,4 @@ link to paper about public school inequlaities in Dallas: https://eximiajournal.
 
 link to map of blocks within Dallas where poverty rate exceeds 20%: https://www.dallasecodev.org/632/Target-Area-Map
 
-
+link to map of crime data: https://dallascitydata.dallascityhall.com/views/CrimeAnalyticsDashboard/CrimeOverviewD?%3Adisplay_count=n&%3Aembed=y&%3AisGuestRedirectFromVizportal=y&%3Aorigin=viz_share_link&%3Arefresh=yes&%3AshowAppBanner=false&%3AshowVizHome=n
