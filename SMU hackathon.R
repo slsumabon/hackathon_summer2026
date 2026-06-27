@@ -49,64 +49,77 @@ df <- read_csv(
 
 # Most divergent metros — the story is in the disagreement
 plot_df <- df %>%
-  mutate(gap = abs(
-    educational_attainment_rank -
-      quality_of_education_and_attainment_gap_rank
-  )) %>%
+  mutate(gap = abs(educational_attainment_rank -
+                     quality_of_education_and_attainment_gap_rank)) %>%
   slice_max(gap, n = 15) %>%
   pivot_longer(
-    c(
-      educational_attainment_rank,
-      quality_of_education_and_attainment_gap_rank
-    ),
-    names_to = "measure",
-    values_to = "rank"
+    c(educational_attainment_rank, quality_of_education_and_attainment_gap_rank),
+    names_to = "measure", values_to = "rank_value"     # <- renamed
   ) %>%
-  mutate(
-    measure = recode(
-      measure,
-      educational_attainment_rank = "Attainment",
-      quality_of_education_and_attainment_gap_rank = "Quality / Gap"
-    )
-  )
+  mutate(measure = recode(measure,
+                          educational_attainment_rank = "Attainment",
+                          quality_of_education_and_attainment_gap_rank = "Quality / Gap"))
 
-ggplot(plot_df, aes(x = measure, y = rank, group = metro_name)) +
-  geom_line(aes(color = measure == "Attainment"),
-            linewidth = 0.9,
-            alpha = 0.7) +
-  geom_point(size = 2.5, color = "#20808D") +
-  geom_text_repel(
-    data = filter(plot_df, measure == "Attainment"),
-    aes(label = metro_name),
-    hjust = 1,
-    nudge_x = -0.05,
-    size = 3,
-    direction = "y",
-    segment.color = NA
-  ) +
-  geom_text_repel(
-    data = filter(plot_df, measure == "Quality / Gap"),
-    aes(label = rank),
-    hjust = 0,
-    nudge_x = 0.05,
-    size = 3
-  ) +
-  scale_y_reverse(breaks = c(1, 50, 100, 150)) +   # rank 1 on top
-  scale_color_manual(values = c("#A84B2F", "#20808D"), guide = "none") +
-  labs(
-    title = "Where a metro's two report cards disagree",
-    subtitle = "The 15 metros with the widest split between raw attainment and education quality/equity",
-    x = NULL,
-    y = "Rank (1 = best)"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(panel.grid.major.x = element_blank())
+# 
+# plot_df <- df %>%
+#   mutate(gap = abs(
+#     educational_attainment_rank -
+#       quality_of_education_and_attainment_gap_rank
+#   )) %>%
+#   slice_max(gap, n = 15) %>%
+#   pivot_longer(
+#     c(
+#       educational_attainment_rank,
+#       quality_of_education_and_attainment_gap_rank
+#     ),
+#     names_to = "measure",
+#     values_to = "rank"
+#   ) %>%
+#   mutate(
+#     measure = recode(
+#       measure,
+#       educational_attainment_rank = "Attainment",
+#       quality_of_education_and_attainment_gap_rank = "Quality / Gap"
+#     )
+#   )
+
+# ggplot(plot_df, aes(x = measure, y = rank, group = metro_name)) +
+#   geom_line(aes(color = measure == "Attainment"),
+#             linewidth = 0.9,
+#             alpha = 0.7) +
+#   geom_point(size = 2.5, color = "#20808D") +
+#   geom_text_repel(
+#     data = filter(plot_df, measure == "Attainment"),
+#     aes(label = metro_name),
+#     hjust = 1,
+#     nudge_x = -0.05,
+#     size = 3,
+#     direction = "y",
+#     segment.color = NA
+#   ) +
+#   geom_text_repel(
+#     data = filter(plot_df, measure == "Quality / Gap"),
+#     aes(label = rank),
+#     hjust = 0,
+#     nudge_x = 0.05,
+#     size = 3
+#   ) +
+#   scale_y_reverse(breaks = c(1, 50, 100, 150)) +   # rank 1 on top
+#   scale_color_manual(values = c("#A84B2F", "#20808D"), guide = "none") +
+#   labs(
+#     title = "Where a metro's two report cards disagree",
+#     subtitle = "The 15 metros with the widest split between raw attainment and education quality/equity",
+#     x = NULL,
+#     y = "Rank (1 = best)"
+#   ) +
+#   theme_minimal(base_size = 12) +
+#   theme(panel.grid.major.x = element_blank())
 
 
 df <- df %>%
   mutate(divergence = quality_of_education_and_attainment_gap_rank -
            educational_attainment_rank)
-df <- df %>% filter(city %in% c("Dallas", "Houston", "Chicago", "Los Angeles", "New York"))
+# df <- df %>% filter(city %in% c("Dallas", "Houston", "Chicago", "Los Angeles", "New York"))
 
 ggplot(
   df,
@@ -271,12 +284,12 @@ ggplot(dallas_city_tracts, aes(incomeE, bachelorsE, color = povertyE)) +
   
   geom_vline(xintercept = income_med, linetype = "dashed") +
   annotate("text", x = 200000, y = educ_med + 5,
-           label = paste0("Overall Median Household Income= ", income_med), 
+           label = paste0("Overall Median Household Income= $", income_med), 
            angle = 0, vjust = -0.5, color = "red") +
   
   geom_hline(yintercept = educ_med, linetype = "dashed") +
   annotate("text", x = 200000, y = educ_med, 
-           label = paste0("Median %Bachelor's Degree= ", educ_med),
+           label = paste0("Median %Bachelor's Degree= ", educ_med, "%"),
            angle = 0, vjust = -0.5, color = "red")+
   
   scale_color_viridis_c(option = "plasma",
@@ -328,3 +341,167 @@ ggplot(dallas_city_tracts, aes(incomeE, bachelorsE, color = povertyE)) +
     hjust = -0.1,
     vjust = -0.5
   )
+
+
+
+
+
+
+##############33
+library(tidyverse)
+library(ggrepel)
+
+df <- read_csv("C:/Users/isabe/OneDrive - Southern Methodist University/hackathon_summer2026/educational_attainment_cleaned.csv")
+
+# 
+# plot_df <- df %>%
+#   mutate(gap = abs(educational_attainment_rank -
+#                      quality_of_education_and_attainment_gap_rank)) %>%
+#   slice_max(gap, n = 15) %>%
+#   pivot_longer(
+#     c(educational_attainment_rank, quality_of_education_and_attainment_gap_rank),
+#     names_to = "measure", values_to = "rank_value"
+#   ) %>%
+#   mutate(measure = recode(measure,
+#                           educational_attainment_rank = "Attainment",
+#                           quality_of_education_and_attainment_gap_rank = "Quality / Gap"))
+# 
+# ggplot(plot_df, aes(x = measure, y = rank_value, group = metro_name)) +
+#   geom_line(aes(color = measure == "Attainment"), linewidth = 0.9, alpha = 0.7) +
+#   geom_point(size = 2.5, color = "#20808D") +
+#   geom_text_repel(
+#     data = filter(plot_df, measure == "Attainment"),
+#     aes(label = metro_name), hjust = 1, nudge_x = -0.05,
+#     size = 3, direction = "y", segment.color = NA) +
+#   geom_text_repel(
+#     data = filter(plot_df, measure == "Quality / Gap"),
+#     aes(label = rank_value), hjust = 0, nudge_x = 0.05, size = 3) +
+#   scale_y_reverse(breaks = c(1, 50, 100, 150)) +
+#   scale_color_manual(values = c("#A84B2F", "#20808D"), guide = "none") +
+#   labs(
+#     title = "Where a metro's two report cards disagree",
+#     subtitle = "15 metros with the widest split between raw attainment and education quality/equity",
+#     x = NULL, y = "Rank (1 = best)") +
+#   theme_minimal(base_size = 12) +
+#   theme(panel.grid.major.x = element_blank())
+
+
+
+
+
+library(tidyverse)
+library(ggrepel)
+
+
+# Plain scatter: education on x, income on y
+ggplot(df, aes(x = bachelorsE, y = incomeE)) +
+  geom_point() +
+  labs(
+    title = "Education vs. Income across 150 cities",
+    x = "Education",
+    y = "Income"
+  ) +
+  theme_minimal()
+
+
+# Most divergent metros — the story is in the disagreement
+plot_df <- df %>%
+  mutate(gap = abs(educational_attainment_rank -
+                     quality_of_education_and_attainment_gap_rank)) %>%
+  slice_max(gap, n = 15) %>%
+  pivot_longer(
+    c(educational_attainment_rank, quality_of_education_and_attainment_gap_rank),
+    names_to = "measure", values_to = "rank"
+  ) %>%
+  mutate(measure = recode(measure,
+                          educational_attainment_rank = "Attainment",
+                          quality_of_education_and_attainment_gap_rank = "Quality / Gap"))
+
+ggplot(plot_df, aes(x = measure, y = rank, group = metro_name)) +
+  geom_line(aes(color = measure == "Attainment"), linewidth = 0.9, alpha = 0.7) +
+  geom_point(size = 2.5, color = "#20808D") +
+  geom_text_repel(
+    data = filter(plot_df, measure == "Attainment"),
+    aes(label = metro_name), hjust = 1, nudge_x = -0.05,
+    size = 3, direction = "y", segment.color = NA) +
+  geom_text_repel(
+    data = filter(plot_df, measure == "Quality / Gap"),
+    aes(label = rank), hjust = 0, nudge_x = 0.05, size = 3) +
+  scale_y_reverse(breaks = c(1, 50, 100, 150)) +   # rank 1 on top
+  scale_color_manual(values = c("#A84B2F", "#20808D"), guide = "none") +
+  labs(
+    title = "Where a metro's two report cards disagree",
+    subtitle = "The 15 metros with the widest split between raw attainment and education quality/equity",
+    x = NULL, y = "Rank (1 = best)") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.x = element_blank())
+
+
+df %>%
+  slice_min(total_score, n = 20) %>%
+  mutate(metro_name = fct_reorder(metro_name, total_score)) %>%
+  ggplot(aes(total_score, metro_name)) +
+  geom_segment(aes(x = median(df$total_score), xend = total_score,
+                   yend = metro_name), color = "grey80") +
+  geom_point(aes(color = state), size = 3) +
+  geom_vline(xintercept = median(df$total_score),
+             linetype = "dashed", color = "grey50") +
+  labs(title = "Bottom 20 metros by total score",
+       subtitle = "Dashed line = national median",
+       x = "Total score", y = NULL) +
+  theme_minimal(base_size = 12) + theme(legend.position = "none")
+
+
+
+########################################
+library(tidycensus)
+library(tidyverse)
+library(scales)
+
+# One-time: get a free key at https://api.census.gov/data/key_signup.html
+# census_api_key("YOUR_KEY_HERE", install = TRUE)  # run once, then restart R
+
+# --- Pull data for ALL places nationwide (one row per city/town) ---
+# B19013_001  = median household income ($)
+# S1501_C02_015 = % of adults 25+ with a bachelor's degree or higher
+vars <- c(
+  median_income = "B19013_001",
+  pct_bachelors = "S1501_C02_015",
+  total_pop = "B01003_001"
+)
+
+acs <- get_acs(
+  geography = "place",
+  variables = vars,
+  year      = 2023,
+  survey    = "acs5",
+  output    = "wide"     # one column per variable -> easy to plot
+)
+
+# --- Clean up ---
+plot_df <- acs %>%
+  # population at least 450,000
+  filter(total_popE >= 450000)  %>%
+  transmute(
+    place         = NAME,
+    median_income = median_incomeE,   # 'E' = estimate column
+    pct_bachelors = pct_bachelorsE
+  ) %>%
+  drop_na(median_income, pct_bachelors)
+  
+
+# --- Plain scatter: education (x) vs income (y) ---
+ggplot(plot_df, aes(x = pct_bachelors, y = median_income)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "lm", se = FALSE, color = "#20808D") +
+  scale_x_continuous(labels = label_percent(scale = 1)) +
+  scale_y_continuous(labels = label_dollar()) +
+  labs(
+    title    = "Education vs. income across U.S. cities",
+    subtitle = "Each point is a Census 'place' (city/town), ACS 2019–2023 5-year estimates\n
+    Filtered to places with a population over 100,000",
+    x = "Adults 25+ with a bachelor's degree or higher",
+    y = "Median household income",
+    caption  = "Source: U.S. Census Bureau, ACS 5-year estimates"
+  ) +
+  theme_minimal(base_size = 12)
