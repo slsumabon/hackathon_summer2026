@@ -12,4 +12,5 @@ link to paper about public school inequlaities in Dallas: https://eximiajournal.
 
 link to map of blocks within Dallas where poverty rate exceeds 20%: https://www.dallasecodev.org/632/Target-Area-Map
 
+link to pubmed article about the effect of SES on academic achievement: https://pmc.ncbi.nlm.nih.gov/articles/PMC12578351/
 
