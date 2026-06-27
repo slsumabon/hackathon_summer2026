@@ -6,4 +6,7 @@ potential research question: Which neighborhoods/cities have educational outcome
 
 link to graduation percentages in Dallas ISD: https://mydata.dallasisd.org/docs/SRC/2425/NCLB/2025_Federal_Report_Card_102.pdf
 
+link to paper about public school inequlaities in Dallas: https://eximiajournal.com/index.php/eximia/article/view/435/279
+-measured  public  school  performance  based  on  graduation  rate  metrics  and average  SAT  scores
+
 
