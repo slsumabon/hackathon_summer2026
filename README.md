@@ -14,3 +14,5 @@ link to map of blocks within Dallas where poverty rate exceeds 20%: https://www.
 
 link to pubmed article about the effect of SES on academic achievement: https://pmc.ncbi.nlm.nih.gov/articles/PMC12578351/
 
+source for education_attainment.csv data: https://wallethub.com/edu/e/most-and-least-educated-cities/6656
+
