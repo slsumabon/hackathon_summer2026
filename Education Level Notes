@@ -1,8 +1,30 @@
 How is a city's education level calculated?
+Source: https://www.star-telegram.com/news/state/texas/article291882575.html
 
-Educational Attainment is a standard measure of a city's education level: https://www.star-telegram.com/news/state/texas/article291882575.html
-Educational Attainment is a point system that adds points for the number of adults
 
-No. 72: Dallas-Fort Worth, score 54.92
+Educational Attainment is a standard measure of a city's education level.
 
-No. 84: Houston-Woodlands-Sugarland, score 52.85
+Educational Attainment - Total Points: 80
+Share of Adults Aged 25 & Older 
+  with a High School Diploma or Higher: Full Weight (~20.00 Points)
+  with at Least Some College Experience or an Associate's Degree or Higher: Full Weight (~20.00 Points)
+  with a Bachelor's Degree or Higher: Full Weight (~20.00 Points)
+  with a Graduate or Professional Degree: Full Weight (~20.00 Points)
+
+
+Quality of Education & Attainment Gap - Total Points: 20
+Quality of Public School System: Double Weight (~4.44 Points)
+  Note: This metric is based on GreatSchools.org’s ratings of U.S. public schools.
+Average Quality of Universities: Double Weight (~4.44 Points)
+  Note: This metric is based on WalletHub's “College & University” rankings report.
+Enrolled Students in Top 822 Universities per Capita: Full Weight (~2.22 Points)
+  Note: This metric is based on WalletHub's “College & University” rankings report.
+Number of Summer Learning Opportunities per Capita**: Full Weight (~2.22 Points)
+Racial Education Gap*: Full Weight (~2.22 Points)
+  Note: This metric specifically measures the difference between the percentage of black bachelor’s degree holders and the percentage of their white counterparts.
+Gender Education Gap*: Full Weight (~2.22 Points)
+  Note: This metric specifically measures the difference between the percentage of female bachelor’s degree holders and the percentage of their male counterparts.
+Education Equality Index Score: Full Weight (~2.22 Points)
+  Note: The Education Equality Index (EEI) is a comparative measure of the achievement gap between students from low-income families, as measured by participation 
+in the free and reduced price lunch program, and their more advantaged peers. The EEI compares the proportion of students from low-income families who are 
+proficient on a state assessment to all students across the state who took that same grade or subject level assessment.
