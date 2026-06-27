@@ -9,4 +9,6 @@ link to graduation percentages in Dallas ISD: https://mydata.dallasisd.org/docs/
 link to paper about public school inequlaities in Dallas: https://eximiajournal.com/index.php/eximia/article/view/435/279
 -measured  public  school  performance  based  on  graduation  rate  metrics  and average  SAT  scores
 
+link to map of blocks within Dallas where poverty rate exceeds 20%: https://www.dallasecodev.org/632/Target-Area-Map
+
 
