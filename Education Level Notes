@@ -3,7 +3,7 @@ Source: https://www.star-telegram.com/news/state/texas/article291882575.html
 
 
 Educational Attainment is a standard measure of a city's education level.
-
+Educational Attainment — the straightforward "how educated is the population" dimension: shares of adults with high school diplomas, bachelor's degrees, graduate/professional degrees, etc.
 Educational Attainment - Total Points: 80
 Share of Adults Aged 25 & Older 
   with a High School Diploma or Higher: Full Weight (~20.00 Points)
@@ -11,7 +11,7 @@ Share of Adults Aged 25 & Older
   with a Bachelor's Degree or Higher: Full Weight (~20.00 Points)
   with a Graduate or Professional Degree: Full Weight (~20.00 Points)
 
-
+Quality of Education & Attainment Gap — a composite that blends school/university quality with equity gaps in attainment.
 Quality of Education & Attainment Gap - Total Points: 20
 Quality of Public School System: Double Weight (~4.44 Points)
   Note: This metric is based on GreatSchools.org’s ratings of U.S. public schools.
@@ -28,3 +28,7 @@ Education Equality Index Score: Full Weight (~2.22 Points)
   Note: The Education Equality Index (EEI) is a comparative measure of the achievement gap between students from low-income families, as measured by participation 
 in the free and reduced price lunch program, and their more advantaged peers. The EEI compares the proportion of students from low-income families who are 
 proficient on a state assessment to all students across the state who took that same grade or subject level assessment.
+
+
+
+
