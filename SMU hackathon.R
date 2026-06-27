@@ -255,22 +255,6 @@ quad_counts <-
 
 quad_counts
 
-labels <-
-  dallas_city_tracts %>%
-  filter(
-    GEOID %in% c(
-      "48113001802",
-      # Downtown
-      "48113002100",
-      # Deep Ellum
-      "48113008313",
-      # Oak Lawn
-      "48113008418",
-      # Highland Park area
-      "48113016601"    # Pleasant Grove
-    )
-  )
-
 
 scale_color_viridis_c(option = "plasma",
                       direction = -1,
@@ -286,10 +270,14 @@ ggplot(dallas_city_tracts, aes(incomeE, bachelorsE, color = povertyE)) +
   geom_point(size = 2.8, alpha = .85) +
   
   geom_vline(xintercept = income_med, linetype = "dashed") +
+  annotate("text", x = 200000, y = educ_med + 5,
+           label = paste0("Overall Median Household Income= ", income_med), 
+           angle = 0, vjust = -0.5, color = "red") +
   
   geom_hline(yintercept = educ_med, linetype = "dashed") +
-  
-  geom_text_repel(data = labels, aes(label = NAME), size = 5) +
+  annotate("text", x = 200000, y = educ_med, 
+           label = paste0("Median %Bachelor's Degree= ", educ_med),
+           angle = 0, vjust = -0.5, color = "red")+
   
   scale_color_viridis_c(option = "plasma",
                         direction = -1,
