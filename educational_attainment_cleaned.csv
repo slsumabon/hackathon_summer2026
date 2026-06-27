@@ -1,0 +1,151 @@
+rank,metro_name,city,state,total_score,educational_attainment_rank,quality_of_education_and_attainment_gap_rank,total_score_zscore,educational_attainment_rank_zscore,quality_of_education_and_attainment_gap_rank_zscore
+1,Ann Arbor,Ann Arbor,MI,93.49,1,4,2.6271,-1.7205,-1.6513
+2,Durham-Chapel Hill,Durham,NC,84.87,6,1,2.0608,-1.6051,-1.7206
+3,Madison,Madison,WI,82.07,2,49,1.8769,-1.6974,-0.6119
+4,San Jose-Sunnyvale-Santa Clara,San Jose,CA,81.82,5,16,1.8605,-1.6282,-1.3741
+5,Washington-Arlington-Alexandria,Washington,DC,81.42,3,35,1.8342,-1.6744,-0.9353
+6,Raleigh-Cary,Raleigh,NC,80.41,4,27,1.7679,-1.6513,-1.1201
+7,San Francisco-Oakland-Berkeley,San Francisco,CA,80.22,7,19,1.7554,-1.582,-1.3048
+8,Austin-Round Rock-Georgetown,Austin,TX,79.51,9,6,1.7087,-1.5358,-1.6051
+9,Seattle-Tacoma-Bellevue,Seattle,WA,78.92,10,11,1.67,-1.5127,-1.4896
+10,Boston-Cambridge-Newton,Boston,MA,77.99,8,66,1.6089,-1.5589,-0.2193
+11,Denver-Aurora-Lakewood,Denver,CO,74.57,11,86,1.3842,-1.4896,0.2427
+12,Colorado Springs,Colorado Springs,CO,74.07,16,23,1.3514,-1.3741,-1.2125
+13,Portland-South Portland,Portland,ME,73.81,13,67,1.3343,-1.4434,-0.1962
+14,Provo-Orem,Provo,UT,73.39,17,20,1.3067,-1.351,-1.2817
+15,Huntsville,Huntsville,AL,72.01,22,8,1.2161,-1.2356,-1.5589
+16,Portland-Vancouver-Hillsboro,Portland,OR,71.43,21,22,1.178,-1.2587,-1.2356
+17,Bridgeport-Stamford-Norwalk,Bridgeport,CT,71.39,12,142,1.1753,-1.4665,1.5361
+18,Minneapolis-St. Paul-Bloomington,Minneapolis,MN,70.03,15,103,1.086,-1.3972,0.6353
+19,Baltimore-Columbia-Towson,Baltimore,MD,69.9,14,109,1.0775,-1.4203,0.7739
+20,Trenton-Princeton,Trenton,NJ,69.82,19,63,1.0722,-1.3048,-0.2886
+21,Albany-Schenectady-Troy,Albany,NY,69.76,18,77,1.0683,-1.3279,0.0348
+22,Tallahassee,Tallahassee,FL,68.79,25,21,1.0046,-1.1663,-1.2586
+23,San Diego-Chula Vista-Carlsbad,San Diego,CA,68.64,27,13,0.9947,-1.1201,-1.4434
+24,Lexington-Fayette,Lexington,KY,68.23,24,50,0.9678,-1.1894,-0.5888
+25,Hartford-East Hartford-Middletown,Hartford,CT,67.31,20,121,0.9073,-1.2817,1.0511
+26,New York-Newark-Jersey City,New York,NY,66.41,30,24,0.8482,-1.0508,-1.1894
+27,New Haven-Milford,New Haven,CT,66.31,23,113,0.8416,-1.2125,0.8663
+28,Asheville,Asheville,NC,66.17,29,53,0.8324,-1.0739,-0.5195
+29,Atlanta-Sandy Springs-Alpharetta,Atlanta,GA,66.01,32,26,0.8219,-1.0046,-1.1432
+30,Lansing-East Lansing,Lansing,MI,65.14,26,76,0.7648,-1.1432,0.0117
+31,Urban Honolulu,Urban Honolulu,HI,64.58,45,10,0.728,-0.7044,-1.5127
+32,Philadelphia-Camden-Wilmington,Philadelphia,PA,64.46,28,81,0.7201,-1.097,0.1272
+33,Chicago-Naperville-Elgin,Chicago,IL,64.38,38,36,0.7149,-0.866,-0.9122
+34,Eugene-Springfield,Eugene,OR,63.62,52,12,0.6649,-0.5427,-1.4665
+35,Charleston-North Charleston,Charleston,SC,63.1,35,82,0.6308,-0.9353,0.1503
+36,Richmond,Richmond,VA,62.79,33,93,0.6104,-0.9815,0.4044
+37,Rochester,Rochester,NY,62.49,34,91,0.5907,-0.9584,0.3582
+38,Pittsburgh,Pittsburgh,PA,62.26,43,43,0.5756,-0.7506,-0.7505
+39,Manchester-Nashua,Manchester,NH,62.23,31,124,0.5736,-1.0277,1.1204
+40,Salt Lake City,Salt Lake City,UT,62.15,48,29,0.5684,-0.6351,-1.0739
+41,Omaha-Council Bluffs,Omaha,NE,62.09,37,92,0.5644,-0.8891,0.3813
+42,Worcester,Worcester,MA,61.97,40,71,0.5566,-0.8199,-0.1038
+43,Tucson,Tucson,AZ,61.82,47,41,0.5467,-0.6582,-0.7967
+44,Virginia Beach-Norfolk-Newport News,Virginia Beach,VA,61.63,55,25,0.5342,-0.4734,-1.1663
+45,Kansas City,Kansas City,MO,61.34,36,114,0.5152,-0.9122,0.8894
+46,St. Louis,St. Louis,MO,61.05,39,127,0.4961,-0.843,1.1897
+47,Charlotte-Concord-Gastonia,Charlotte,NC,60.9,56,31,0.4863,-0.4503,-1.0277
+48,Nashville-Davidson--Murfreesboro--Franklin,Nashville,TN,60.77,50,58,0.4777,-0.5889,-0.404
+49,Columbus,Columbus,OH,60.58,44,95,0.4652,-0.7275,0.4506
+50,Naples-Marco Island,Naples,FL,59.84,42,117,0.4166,-0.7737,0.9587
+51,Sacramento-Roseville-Folsom,Sacramento,CA,59.54,58,34,0.3969,-0.4042,-0.9584
+52,Boise City,Boise City,ID,59.13,57,59,0.37,-0.4272,-0.381
+53,North Port-Sarasota-Bradenton,North Port,FL,58.7,41,138,0.3418,-0.7968,1.4437
+54,Orlando-Kissimmee-Sanford,Orlando,FL,58.13,73,17,0.3043,-0.0577,-1.351
+55,Cincinnati,Cincinnati,OH,57.91,59,68,0.2899,-0.3811,-0.1731
+56,Milwaukee-Waukesha,Milwaukee,WI,57.86,51,134,0.2866,-0.5658,1.3513
+57,Des Moines-West Des Moines,Des Moines,IA,57.85,46,133,0.2859,-0.6813,1.3282
+58,Santa Rosa-Petaluma,Santa Rosa,CA,57.58,54,118,0.2682,-0.4965,0.9818
+59,Buffalo-Cheektowaga,Buffalo,NY,57.5,49,131,0.2629,-0.612,1.2821
+60,Columbia,Columbia,SC,57.33,65,79,0.2518,-0.2425,0.081
+61,Spokane-Spokane Valley,Spokane,WA,57.28,68,48,0.2485,-0.1732,-0.635
+62,Anchorage,Anchorage,AK,57.15,62,83,0.2399,-0.3118,0.1734
+63,Albuquerque,Albuquerque,NM,57.09,53,129,0.236,-0.5196,1.2359
+64,Dayton-Kettering,Dayton,OH,56.86,71,52,0.2209,-0.1039,-0.5426
+65,Indianapolis-Carmel-Anderson,Indianapolis,IN,56.67,64,90,0.2084,-0.2656,0.3351
+66,Palm Bay-Melbourne-Titusville,Palm Bay,FL,56.58,60,112,0.2025,-0.358,0.8432
+67,Fayetteville-Springdale-Rogers,Fayetteville,AR,56.29,88,3,0.1834,0.2887,-1.6744
+68,Syracuse,Syracuse,NY,56.16,63,108,0.1749,-0.2887,0.7508
+69,Grand Rapids-Kentwood,Grand Rapids,MI,56.05,69,78,0.1677,-0.1501,0.0579
+70,Santa Maria-Santa Barbara,Santa Maria,CA,55.89,89,2,0.1572,0.3118,-1.6975
+71,Dallas-Fort Worth-Arlington,Dallas,TX,55.89,70,65,0.1572,-0.127,-0.2424
+72,Jacksonville,Jacksonville,FL,55.84,72,62,0.1539,-0.0808,-0.3117
+73,Miami-Fort Lauderdale-Pompano Beach,Miami,FL,55.5,86,5,0.1315,0.2425,-1.6282
+74,Savannah,Savannah,GA,55.35,66,94,0.1217,-0.2194,0.4275
+75,Tampa-St. Petersburg-Clearwater,Tampa,FL,54.33,80,46,0.0547,0.1039,-0.6812
+76,Detroit-Warren-Dearborn,Detroit,MI,54.3,67,128,0.0527,-0.1963,1.2128
+77,Akron,Akron,OH,53.94,74,98,0.0291,-0.0346,0.5198
+78,Little Rock-North Little Rock-Conway,Little Rock,AR,53.85,78,61,0.0232,0.0577,-0.3348
+79,Birmingham-Hoover,Birmingham,AL,53.55,82,40,0.0035,0.1501,-0.8198
+80,Ogden-Clearfield,Ogden,UT,53.52,61,148,0.0015,-0.3349,1.6747
+81,Harrisburg-Carlisle,Harrisburg,PA,53.17,77,104,-0.0215,0.0346,0.6584
+82,Phoenix-Mesa-Chandler,Phoenix,AZ,53.11,75,116,-0.0254,-0.0115,0.9356
+83,Oxnard-Thousand Oaks-Ventura,Oxnard,CA,52.95,81,57,-0.036,0.127,-0.4271
+84,Greenville-Anderson,Greenville,SC,52.86,87,33,-0.0419,0.2656,-0.9815
+85,Houston-The Woodlands-Sugar Land,Houston,TX,52.78,99,18,-0.0471,0.5427,-1.3279
+86,Los Angeles-Long Beach-Anaheim,Los Angeles,CA,52.56,102,14,-0.0616,0.612,-1.4203
+87,Cleveland-Elyria,Cleveland,OH,52.56,76,130,-0.0616,0.0115,1.259
+88,Oklahoma City,Oklahoma City,OK,52.47,85,54,-0.0675,0.2194,-0.4964
+89,Peoria,Peoria,IL,52.38,79,96,-0.0734,0.0808,0.4736
+90,Knoxville,Knoxville,TN,51.65,90,38,-0.1214,0.3349,-0.866
+91,Springfield,Springfield,MO,51.48,96,37,-0.1325,0.4734,-0.8891
+92,Reno,Reno,NV,51.37,91,47,-0.1397,0.358,-0.6581
+93,Louisville/Jefferson County,Louisville/Jefferson County,KY,50.93,83,100,-0.1686,0.1732,0.566
+94,Allentown-Bethlehem-Easton,Allentown,PA,50.85,92,55,-0.1739,0.3811,-0.4733
+95,Providence-Warwick,Providence,RI,50.78,84,99,-0.1785,0.1963,0.5429
+96,Fayetteville,Fayetteville,NC,50.75,108,7,-0.1805,0.7506,-1.582
+97,New Orleans-Metairie,New Orleans,LA,49.85,93,75,-0.2396,0.4042,-0.0114
+98,Pensacola-Ferry Pass-Brent,Pensacola,FL,49.76,98,70,-0.2455,0.5196,-0.1269
+99,Toledo,Toledo,OH,49.72,97,73,-0.2481,0.4965,-0.0576
+100,San Antonio-New Braunfels,San Antonio,TX,49.65,105,32,-0.2527,0.6813,-1.0046
+101,Greensboro-High Point,Greensboro,NC,49.21,106,42,-0.2816,0.7044,-0.7736
+102,Chattanooga,Chattanooga,TN,48.9,101,80,-0.302,0.5889,0.1041
+103,Montgomery,Montgomery,AL,48.57,107,51,-0.3237,0.7275,-0.5657
+104,Wichita,Wichita,KS,48.47,94,109,-0.3302,0.4272,0.7739
+105,Jackson,Jackson,MS,48.31,95,122,-0.3408,0.4503,1.0742
+106,Davenport-Moline-Rock Island,Davenport,IA,47.87,100,132,-0.3697,0.5658,1.3052
+107,Cape Coral-Fort Myers,Cape Coral,FL,47.54,103,106,-0.3913,0.6351,0.7046
+108,Winston-Salem,Winston,NC,47.21,113,39,-0.413,0.866,-0.8429
+109,Memphis,Memphis,TN,46.83,104,111,-0.438,0.6582,0.8201
+110,Deltona-Daytona Beach-Ormond Beach,Deltona,FL,46.74,110,56,-0.4439,0.7968,-0.4502
+111,Tulsa,Tulsa,OK,45.42,109,97,-0.5306,0.7737,0.4967
+112,Myrtle Beach-Conway-North Myrtle Beach,Myrtle Beach,SC,45.39,118,30,-0.5326,0.9815,-1.0508
+113,Fort Wayne,Fort Wayne,IN,44.62,114,101,-0.5831,0.8891,0.5891
+114,Baton Rouge,Baton Rouge,LA,44.32,116,74,-0.6029,0.9353,-0.0345
+115,Augusta-Richmond County,Augusta,GA,44,111,126,-0.6239,0.8199,1.1666
+116,Port St. Lucie,Port St. Lucie,FL,42.79,112,141,-0.7034,0.843,1.513
+117,Killeen-Temple,Killeen,TX,42.37,117,107,-0.7309,0.9584,0.7277
+118,Las Vegas-Henderson-Paradise,Las Vegas,NV,41.84,126,28,-0.7658,1.1663,-1.097
+119,York-Hanover,York,PA,41.75,123,60,-0.7717,1.097,-0.3579
+120,Springfield,Springfield,MA,41.22,119,120,-0.8065,1.0046,1.028
+121,Lancaster,Lancaster,PA,40.85,122,89,-0.8308,1.0739,0.312
+122,Vallejo,Vallejo,CA,40.84,115,143,-0.8314,0.9122,1.5592
+123,Canton-Massillon,Canton,OH,40.72,127,45,-0.8393,1.1894,-0.7043
+124,Salem,Salem,OR,40.21,120,119,-0.8728,1.0277,1.0049
+125,Shreveport-Bossier City,Shreveport,LA,40.19,125,72,-0.8741,1.1432,-0.0807
+126,Scranton--Wilkes-Barre,Scranton,PA,39.58,121,136,-0.9142,1.0508,1.3975
+127,Mobile,Mobile,AL,38.9,132,44,-0.9589,1.3048,-0.7274
+128,Salisbury,Salisbury,MD,38.5,128,102,-0.9852,1.2125,0.6122
+129,Flint,Flint,MI,37.87,129,115,-1.0265,1.2356,0.9125
+130,Gulfport-Biloxi,Gulfport,MS,37.02,124,146,-1.0824,1.1201,1.6285
+131,Rockford,Rockford,IL,35.92,130,125,-1.1546,1.2587,1.1435
+132,El Paso,El Paso,TX,35.12,140,9,-1.2072,1.4896,-1.5358
+133,Youngstown-Warren-Boardman,Youngstown,OH,35.03,135,84,-1.2131,1.3741,0.1965
+134,Lafayette,Lafayette,LA,33.34,136,105,-1.3241,1.3972,0.6815
+135,Huntington-Ashland,Huntington,WV,33.3,133,144,-1.3267,1.3279,1.5823
+136,Reading,Reading,PA,33.26,131,149,-1.3294,1.2817,1.6978
+137,Lakeland-Winter Haven,Lakeland,FL,32.89,137,64,-1.3537,1.4203,-0.2655
+138,Riverside-San Bernardino-Ontario,Riverside,CA,32.72,139,69,-1.3648,1.4665,-0.15
+139,Ocala,Ocala,FL,30.92,134,150,-1.4831,1.351,1.7209
+140,Corpus Christi,Corpus Christi,TX,30.02,138,137,-1.5422,1.4434,1.4206
+141,Beaumont-Port Arthur,Beaumont,TX,27.39,143,85,-1.715,1.5589,0.2196
+142,Hickory-Lenoir-Morganton,Hickory,NC,26.89,141,139,-1.7478,1.5127,1.4668
+143,Salinas,Salinas,CA,26.32,142,140,-1.7852,1.5358,1.4899
+144,Stockton,Stockton,CA,25.33,145,87,-1.8503,1.6051,0.2658
+145,Fresno,Fresno,CA,23.9,144,135,-1.9442,1.582,1.3744
+146,Modesto,Modesto,CA,17.78,146,145,-2.3462,1.6282,1.6054
+147,Bakersfield,Bakersfield,CA,16.91,147,123,-2.4034,1.6513,1.0973
+148,McAllen-Edinburg-Mission,McAllen,TX,14.1,150,15,-2.588,1.7205,-1.3972
+149,Brownsville-Harlingen,Brownsville,TX,13.09,148,88,-2.6543,1.6744,0.2889
+150,Visalia,Visalia,CA,9.12,149,147,-2.9151,1.6974,1.6516
