@@ -480,20 +480,24 @@ acs <- get_acs(
 
 # --- Clean up ---
 plot_df <- acs %>%
-  # population at least 450,000
-  filter(total_popE >= 450000)  %>%
+  
   transmute(
     place         = NAME,
     median_income = median_incomeE,   # 'E' = estimate column
-    pct_bachelors = pct_bachelorsE
+    pct_bachelors = pct_bachelorsE,
+    total_pop = total_popE
   ) %>%
   drop_na(median_income, pct_bachelors)
   
 
+# population at least 100,000
+plot_df <- plot_df %>%
+filter(total_pop >= 100000)
+
 # --- Plain scatter: education (x) vs income (y) ---
 ggplot(plot_df, aes(x = pct_bachelors, y = median_income)) +
-  geom_point(alpha = 0.4) +
-  geom_smooth(method = "lm", se = FALSE, color = "#20808D") +
+  geom_point(alpha = 0.4, color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
   scale_x_continuous(labels = label_percent(scale = 1)) +
   scale_y_continuous(labels = label_dollar()) +
   labs(
@@ -504,4 +508,5 @@ ggplot(plot_df, aes(x = pct_bachelors, y = median_income)) +
     y = "Median household income",
     caption  = "Source: U.S. Census Bureau, ACS 5-year estimates"
   ) +
+  coord_flip()+
   theme_minimal(base_size = 12)
